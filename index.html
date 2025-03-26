@@ -1,45 +1,53 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Office的网站</title>
-    <link rel="stylesheet" href="/Water Office.github.io/styles.css">
+    <title>Water Office - 人工智能解决方案专家</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="My-Photo.jpg" alt="我的照片" class="profile-photo">
-        <h1>欢迎来到Water Office的网站</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">关于我们</a></li>
-                <li><a href="#projects">项目</a></li>
-                <li><a href="#contact">联系我们</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <h2>Water Office</h2>
+        </div>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#services">解决方案</a>
+            <a href="#about">关于我们</a>
+            <a href="#contact">联系我们</a>
+        </div>
+    </nav>
 
-    <section id="about">
-        <h2>关于我们</h2>
-        <p>你好！我们是一个致力于研发人工智能产品以及适合人们使用的产品。</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>用人工智能<br>重塑未来商业</h1>
+            <p>Water Office 专注于为企业提供前沿的人工智能解决方案，通过深度学习、自然语言处理和计算机视觉技术，助力您的业务数字化转型。</p>
+            <button class="cta-button">立即咨询 →</button>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>项目</h2>
-        <ul>
-            <li>项目1：网站博客</li>
-            <li>项目2：在线商店</li>
-            <li>项目3：作品集网站</li>
-        </ul>
+    <section class="services">
+        <h2>核心服务</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-microchip"></i>
+                <h3>智能决策系统</h3>
+                <p>基于深度学习的实时决策支持系统，优化企业运营流程</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-robot"></i>
+                <h3>流程自动化</h3>
+                <p>RPA与AI结合的智能自动化解决方案，提升200%工作效率</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cloud"></i>
+                <h3>智能云平台</h3>
+                <p>一站式AI开发平台，快速部署机器学习模型</p>
+            </div>
+        </div>
     </section>
-
-    <section id="contact">
-        <h2>联系我们</h2>
-        <p>电子邮件：1617067111@qq.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 我的个人网站</p>
-    </footer>
 </body>
 </html>
