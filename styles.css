@@ -1,162 +1,154 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-}
-
+/* 全局样式 */
 body {
-    background-color: #f9fbfd;
-    color: #2d3436;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* 导航栏 */
-.navbar {
-    position: fixed;
-    width: 100%;
-    padding: 1.5rem 8%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-    z-index: 1000;
+/* 导航栏样式 */
+nav {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.logo-icon {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, #0984e3, #74b9ff);
-    border-radius: 8px;
-    position: relative;
-}
-
-.logo-icon::after {
-    content: '';
-    position: absolute;
-    width: 60%;
-    height: 60%;
-    background: white;
-    border-radius: 50%;
-    top: 20%;
-    left: 20%;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .nav-links {
-    display: flex;
-    gap: 2.5rem;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #2d3436;
-    font-weight: 500;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #333;
 }
 
-.nav-links a:hover {
-    color: #0984e3;
+/* 主内容区样式 */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* 主内容区 */
-.hero {
-    min-height: 100vh;
-    padding: 15% 8% 0;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(45deg, #f8f9fa, #ffffff);
+.service-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 50px 0;
 }
 
-.hero-content {
-    max-width: 600px;
+.service-content {
+  width: 40%;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #2d3436, #0984e3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.service-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #636e72;
-    margin-bottom: 2.5rem;
+.service-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
-.cta-button {
-    padding: 1rem 2rem;
-    background: linear-gradient(135deg, #0984e3, #74b9ff);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: transform 0.3s;
+.service-content button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.cta-button:hover {
-    transform: translateY(-3px);
+.industry-section {
+  width: 80%;
+  text-align: center;
+  margin: 50px 0;
 }
 
-/* 服务板块 */
-.services {
-    padding: 5rem 8%;
-    background: #ffffff;
+.industry-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-.services h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+.industry-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
-    margin-top: 3rem;
+.industry-images img {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
 }
 
-.service-card {
-    padding: 2rem;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s;
-    text-align: center;
+.client-section {
+  width: 80%;
+  text-align: center;
+  margin: 50px 0;
 }
 
-.service-card:hover {
-    transform: translateY(-10px);
+.client-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-.service-card i {
-    font-size: 2.5rem;
-    color: #0984e3;
-    margin-bottom: 1.5rem;
+.client-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-/* 响应式设计 */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
+.client-images img {
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+}
 
-    .hero h1 {
-        font-size: 2.5rem;
-    }
+/* 页脚样式 */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
 
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
+.company-info p {
+  margin: 5px 0;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
