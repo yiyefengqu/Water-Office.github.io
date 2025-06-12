@@ -63,7 +63,7 @@ nav {
 
 .industry-images img,
 .client-images img {
-  width: 500px; /* 调整图片大小 */
+  width: 100px; /* 调整图片大小 */
   height: auto; /* 高度自适应 */
   margin: 10px; /* 添加外边距 */
 }
