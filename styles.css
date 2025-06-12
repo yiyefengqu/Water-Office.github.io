@@ -2,13 +2,13 @@
 nav {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .logo-img {
-  width: 30px; /* 将图片宽度设置为10px */
+  width: 25px; /* 将图片宽度设置为10px */
   height: auto;
-  margin-right: 20px; /* 在图片和文字之间添加一些间距 */
+  margin-right: 10px; /* 在图片和文字之间添加一些间距 */
 }
 
 .logo {
@@ -44,7 +44,7 @@ nav {
 }
 
 .service-section img {
-  width: 30px; /* 将ocean-bg.jpg图片宽度设置为30px */
+  width: 50px; /* 将ocean-bg.jpg图片宽度设置为30px */
   height: auto;
 }
 
