@@ -6,7 +6,7 @@ nav {
 }
 
 .logo-img {
-  width: 10px; /* 调整图片大小 */
+  width: 10px; /* 将图片宽度设置为10px */
   height: auto;
   margin-right: 10px; /* 在图片和文字之间添加一些间距 */
 }
@@ -31,120 +31,56 @@ nav {
   color: black;
 }
 
-
 /* 主内容区样式 */
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .service-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
-  margin: 50px 0;
+  padding: 20px;
 }
 
 .service-content {
-  width: 40%;
+  flex: 1;
 }
 
-.service-content h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+.service-section img {
+  width: 30px; /* 将ocean-bg.jpg图片宽度设置为30px */
+  height: auto;
 }
 
-.service-content p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.service-content button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.industry-section {
-  width: 80%;
-  text-align: center;
-  margin: 50px 0;
-}
-
-.industry-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.industry-images {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.industry-images img {
-  width: 200px;
-  height: 150px;
-  margin: 10px;
-}
-
+.industry-section,
 .client-section {
-  width: 80%;
   text-align: center;
-  margin: 50px 0;
+  padding: 20px;
 }
 
-.client-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.client-images {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
+.industry-images img,
 .client-images img {
-  width: 150px;
-  height: 100px;
+  width: 100px; /* 调整行业和客户图片的大小 */
+  height: auto;
   margin: 10px;
 }
 
 /* 页脚样式 */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #f8f8f8;
   padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
   display: flex;
   justify-content: space-around;
 }
 
-.company-info p {
-  margin: 5px 0;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 5px;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
+.company-info,
+.footer-links,
+.social-media {
+  flex: 1;
 }
 
 .social-media img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+  width: 30px; /* 调整社交媒体图标的大小 */
+  height: auto;
+  margin: 5px;
 }
