@@ -38,10 +38,8 @@ nav {
 .service-section {
   display: flex; /* 使用 Flexbox 布局 */
   align-items: center; /* 垂直居中对齐子元素 */
-  justify-content: center; /* 水平方向居中对齐 */
+  justify-content: space-between; /* 水平方向两端对齐 */
   padding: 20px; /* 添加内边距 */
-  flex-direction: column; /* 子元素垂直排列 */
-  text-align: center; /* 文字居中 */
 }
 
 .service-content {
@@ -50,7 +48,7 @@ nav {
 
 /* ocean-bg.jpg 图片样式 */
 .service-section img {
-  width: 500px; /* 将图片宽度设置为1000px */
+  width: 500px; /* 将图片宽度设置为30px */
   height: auto; /* 高度自适应 */
 }
 
@@ -92,5 +90,5 @@ footer {
   width: 30px; /* 调整图标大小 */
   height: auto; /* 高度自适应 */
   margin: 5px; /* 添加外边距 */
-}
+}主内容改成居中对齐
 
