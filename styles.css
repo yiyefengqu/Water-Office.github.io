@@ -50,7 +50,7 @@ nav {
 
 /* ocean-bg.jpg 图片样式 */
 .service-section img {
-  width: 1000px; /* 将图片宽度设置为1000px */
+  width: 500px; /* 将图片宽度设置为1000px */
   height: auto; /* 高度自适应 */
 }
 
@@ -63,7 +63,7 @@ nav {
 
 .industry-images img,
 .client-images img {
-  width: 1000px; /* 调整图片大小 */
+  width: 500px; /* 调整图片大小 */
   height: auto; /* 高度自适应 */
   margin: 10px; /* 添加外边距 */
 }
