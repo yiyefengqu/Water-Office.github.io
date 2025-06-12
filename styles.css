@@ -1,30 +1,25 @@
-/* 全局样式 */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* styles.css */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
-/* 导航栏样式 */
-nav {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+.logo-img {
+  width: 20px; /* 调整图片大小 */
+  height: auto;
+  margin-right: 10px; /* 在图片和文字之间添加一些间距 */
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
+  margin-left: auto;
 }
 
 .nav-links li {
@@ -33,8 +28,9 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: black;
 }
+
 
 /* 主内容区样式 */
 main {
